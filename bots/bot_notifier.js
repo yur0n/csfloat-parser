@@ -1,7 +1,7 @@
 import { Bot } from 'grammy'
 
 const bot = new Bot(process.env.BOT_NOTIFIER)
-bot.api.setMyCommands([{ command: 'start', description: 'Start bot' } ])
+// bot.api.setMyCommands([{ command: 'start', description: 'Start bot' } ])
 
 bot.command('start', async (ctx) => {
 	await ctx.reply('Hello, I will be sending you notifications about new profitable skins\n\n' + 

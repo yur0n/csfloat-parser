@@ -7,7 +7,7 @@ import { deleteMsg, deleteMsgTime } from './bot_admin/functions.js'
 const allowedUsers = [378931386, 6497786721, 680679144, 6653006609, 6864085986]
 
 const bot = new Bot(process.env.BOT_ADMIN)
-bot.api.setMyCommands([{ command: 'start', description: 'Admin panel' } ])
+// bot.api.setMyCommands([{ command: 'start', description: 'Admin panel' } ])
 
 bot.on('message', (ctx, next) => {
 	if (!allowedUsers.includes(ctx.from.id)) return;
