@@ -3,6 +3,8 @@ import skinIDs from './getSkinIDs.js';
 import * as cheerio from 'cheerio';
 import { CronJob } from 'cron';
 
+updateSkins();
+
 new CronJob(
 	'0 0 */7 * * *',
   updateSkins,

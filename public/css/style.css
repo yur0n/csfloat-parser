@@ -21,10 +21,6 @@ body {
     color: #000;
 }
 
-h1 {
-    text
-}
-
 a {
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
@@ -247,7 +243,7 @@ a {
 
 .table-top__clear > img {
     width: 40px;
-    height: 35px;
+    height: 30px;
     object-fit: cover;
 }
 
@@ -342,7 +338,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 13px 25px 13px 25px;
     gap: 40px;
     background: rgb(66 66 66/ 85%);
 }
@@ -351,7 +347,7 @@ a {
     width: 40px;
     position: absolute;
     left: 25px;
-    top: 45px;
+    top: 30px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
