@@ -103,7 +103,7 @@ window.addEventListener("message", (e) => {
             <p>CSFloat Price: ${skin.csPrice}</p>
             <p>BUFF163 Price: ${skin.buffPrice}</p>
             <p>Profit: ${skin.profit}%</p>
-            <p><a href="${skin.link}" target="_blank">СS.Money Link</a></p>
+            <p><a href="${skin.link}" target="_blank">СSFloat Link</a></p>
             `;
             table.appendChild(row);
         });
