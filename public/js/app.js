@@ -72,7 +72,7 @@ async function start() {
     window.postMessage({ parse: true, data }, "*");
     timeout = setTimeout(() => {
         start();
-    }, 20_000);
+    }, getRandomNumber(30, 45) * 1000);
 }
 
 window.addEventListener("message", (e) => {
@@ -122,6 +122,10 @@ window.addEventListener("message", (e) => {
         }
     }
 });
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 function formatDate() {
     const now = new Date();
